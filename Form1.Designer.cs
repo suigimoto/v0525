@@ -30,6 +30,7 @@
         {
             button1 = new Button();
             label1 = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -52,11 +53,20 @@
             label1.Text = "label1";
             label1.Click += label1_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(255, 186);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 2;
+            textBox1.Text = "杉本";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "Form1";
@@ -69,5 +79,6 @@
 
         private Button button1;
         private Label label1;
+        private TextBox textBox1;
     }
 }

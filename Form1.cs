@@ -11,6 +11,7 @@ namespace v0525
         {
             MessageBox.Show("Hello");
             label1.Text = "Hello";
+            textBox1.Text = "Ç±ÇÒÇøÇÕêôñ{Ç≥ÇÒ";
         }
 
         private void label1_Click(object sender, EventArgs e)
