@@ -9,14 +9,20 @@ namespace v0525
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello");
             label1.Text = "Hello";
-            textBox1.Text = "Ç±ÇÒÇøÇÕêôñ{Ç≥ÇÒ";
+            MessageBox.Show("Hello");
+
+            MessageBox.Show($"Ç±ÇÒÇ…ÇøÇÕ{textBox1.Text}Ç≥ÇÒ");
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Left++;
         }
     }
 }

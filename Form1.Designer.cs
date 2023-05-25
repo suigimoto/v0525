@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             button1 = new Button();
             label1 = new Label();
             textBox1 = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // button1
@@ -61,6 +63,11 @@
             textBox1.TabIndex = 2;
             textBox1.Text = "杉本";
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -80,5 +87,6 @@
         private Button button1;
         private Label label1;
         private TextBox textBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
